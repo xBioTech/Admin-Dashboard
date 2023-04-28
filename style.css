@@ -29,6 +29,8 @@ html, body {
     display: grid;
     grid-template-rows: repeat(2, 0.4fr);
     color: white;
+    font-size: 1.2rem;
+    gap: 3em;
 }
 
 .main-content{
@@ -64,3 +66,13 @@ html, body {
     background-color: antiquewhite;
   
 }
+
+.dashboard{
+    display: flex;
+    gap: 10px;
+}
+
+img{
+    max-width: 9%;
+}
+
