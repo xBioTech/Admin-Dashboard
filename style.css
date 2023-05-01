@@ -1,3 +1,6 @@
+*{
+    box-sizing: border-box;
+}
 html, body {
     height: 100%;
     margin: 0;
@@ -14,15 +17,83 @@ html, body {
     background-color: red;
     display: grid;
     grid-template-rows: repeat(2, 1fr);
+    background-color: white;
+    font-weight: 700;
 }
 .headertop{
-    display: grid;
-    grid-auto-flow: column;
+    display: flex;
+    justify-content: space-evenly;
 }
+
+.left{
+display: flex;
+align-items: center;
+flex: 1;
+max-width: 35%;
+}
+
+.searchbaricon{
+    width: 2em;
+    margin-right: 1em;
+}
+
+.right{
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 2em;
+}
+
+.notificationicon{
+    max-width: 2em;
+}
+
+.usernametop{
+    font-size: 1.2rem;
+}
+
 .headerbottom{
-    display: grid;
-    grid-auto-flow: column;
+    display: flex;
+    justify-content: space-around;
 }
+
+.header-bottom-avatar{
+    max-width: 6em;
+}
+
+.userbottom{
+    margin-left: 1em;
+}
+
+.leftbottom{
+    display: flex;
+    margin-right: 30em;
+}
+
+.rightbottom{
+    display: flex;
+    gap: 2em;
+    align-items: center;
+}
+
+button{
+    padding: 1em 3em;
+    border-radius: 2em;
+    border: none;
+    cursor: pointer;
+    background-color: #0ea5e9;
+    color: white;
+    font-weight: 700;
+}
+
+input{
+    border-radius: 50px;
+    background-color: #e4e4e7;
+    border: none;
+    height: 30%;
+    flex: 1;
+}
+
 .sidebar{
     grid-row: 1/5;
     background-color: #0ea5e9;
@@ -31,6 +102,7 @@ html, body {
     color: white;
     font-size: 1.2rem;
     gap: 3em;
+    min-width: 10em;
 }
 
 .main-content{
