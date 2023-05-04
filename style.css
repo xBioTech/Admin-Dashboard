@@ -7,7 +7,6 @@ html, body {
 }
 
 .container{
-    height: 100%;
     display: grid;
     grid-template-columns: 0.4fr 1fr 1fr 1fr;
     grid-template-rows: repeat(4, 1fr);
@@ -110,7 +109,7 @@ input{
     gap: 10px;
     grid-row: 2/5;
     grid-column: 2/5;
-    background-color: gray;
+    background-color: #e4e4e7;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: repeat(3, 1fr);
@@ -118,6 +117,29 @@ input{
 
 .card{
     background-color: aqua;
+    display: grid;
+    grid-template-columns: 0.15fr 1fr;
+    grid-template-rows: 1fr 0.3fr;
+    background-color: white;
+    border-radius: 10px;
+}
+
+.card-color-box{
+    background-color: #EEB23B;
+    max-width: 20%;
+    grid-row: 1 / 4;
+    border-radius: 10px 0 0 10px;
+}
+
+.img-wrapper{
+    display: flex;
+    justify-content: flex-end;
+    grid-column: 2;
+    gap: 1em;
+    padding: 1em;
+}
+
+.text-wrapper{
     display: grid;
 }
 
