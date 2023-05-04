@@ -15,20 +15,22 @@ html, body {
     grid-column: 2/5;
     background-color: red;
     display: grid;
-    grid-template-rows: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 0.5fr);
     background-color: white;
     font-weight: 700;
 }
 .headertop{
-    display: flex;
-    justify-content: space-evenly;
+   grid-row: 1;
+   display: grid;
+   grid-template-columns: repeat(3, 1fr);
+   align-items: center;
 }
 
 .left{
-display: flex;
-align-items: center;
-flex: 1;
-max-width: 35%;
+    align-items: center;
+    display: flex;
+  grid-column-start: 1;
+  grid-column-end: 3;
 }
 
 .searchbaricon{
@@ -39,8 +41,8 @@ max-width: 35%;
 .right{
     display: flex;
     align-items: center;
-    justify-content: flex-end;
-    gap: 2em;
+    grid-column: 3;   
+    gap: 1em;
 }
 
 .notificationicon{
@@ -52,27 +54,30 @@ max-width: 35%;
 }
 
 .headerbottom{
-    display: flex;
-    justify-content: space-around;
+   grid-row: 2; 
+   display: grid;
+   grid-template-columns: 1fr 0.2fr 1fr;
+   align-items: center;
 }
 
 .header-bottom-avatar{
     max-width: 6em;
 }
 
-.userbottom{
-    margin-left: 1em;
-}
 
 .leftbottom{
     display: flex;
-    margin-right: 30em;
+    align-items: center;
+    grid-column-start: 1;
+    grid-column-end: 2;
+    gap: 1em;
 }
 
 .rightbottom{
     display: flex;
-    gap: 2em;
-    align-items: center;
+   align-items: center;
+   grid-column: 3;
+   gap: 1em;
 }
 
 button{
@@ -89,8 +94,8 @@ input{
     border-radius: 50px;
     background-color: #e4e4e7;
     border: none;
-    height: 30%;
     flex: 1;
+   max-width: 80%;
 }
 
 .sidebar{
