@@ -24,6 +24,7 @@ html, body {
    display: grid;
    grid-template-columns: repeat(3, 1fr);
    align-items: center;
+   padding-left: 2em;
 }
 
 .left{
@@ -58,6 +59,7 @@ html, body {
    display: grid;
    grid-template-columns: 1fr 0.2fr 1fr;
    align-items: center;
+   padding-left: 2em;
 }
 
 .header-bottom-avatar{
@@ -156,15 +158,30 @@ input{
     gap: 10px;
 }
 
-.annoucements{
-    background-color: goldenrod;
-   
+.announcements{
+    background-color: white;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    border-radius: 10px;
 }
 
 .trends{
-    background-color: antiquewhite;
-  
+    background-color: white;
+    display: grid;
+    align-items: center;
+    grid-template-rows: repeat(4, 1fr);
+    grid-template-columns: 0.4fr 1fr;
+    border-radius: 10px;
 }
+
+
+
+.trending-img{
+    max-width: 3em;
+    margin-left: 1em;
+}
+
 
 .dashboard{
     display: flex;
