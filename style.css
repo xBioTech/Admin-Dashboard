@@ -38,6 +38,11 @@ html, body {
   grid-column-end: 3;
 }
 
+
+.hamburgericon{
+    display: none;
+}
+
 .searchbaricon{
     width: 2em;
     margin-right: 1em;
@@ -212,4 +217,46 @@ img{
       }
 }
 
+@media (max-width: 480px){
 
+    .sidebar{
+        display: none;
+    }
+
+    .usernametop{
+        font-size: 0.8rem;
+    }
+
+    .container{
+        grid-template-columns: 1fr;
+}
+
+    input{
+        max-width: 60%;
+    }
+
+   .hamburgericon{
+    display: block;
+    cursor: pointer;
+   }
+   
+   .searchbaricon{
+    margin-left: 2em;
+   }
+
+   .notificationicon{
+    max-width: 1.5em;
+   }
+
+   .header-top-avatar{
+    max-width: 1.5em;
+   }
+
+   .headertop{
+    padding-right: 0.5em;
+   }
+
+   .headerbottom{
+    padding-right: 0.5em;
+   }
+}
